@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sonido - MYL</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>MYL</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="#carrito">Carrito</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Sistemas de Audio</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Parlante JBL EON615</h3>
+        <p>$5.000 por día</p>
+        <button onclick="agregarAlCarrito('Parlante JBL EON615', 5000)">Agregar</button>
+      </div>
+      <div class="card">
+        <h3>Subwoofer QSC KW181</h3>
+        <p>$7.000 por día</p>
+        <button onclick="agregarAlCarrito('Subwoofer QSC KW181', 7000)">Agregar</button>
+      </div>
+    </div>
+
+    <h2>Micrófonos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Shure SM58</h3>
+        <p>$1.000 por día</p>
+        <button onclick="agregarAlCarrito('Shure SM58', 1000)">Agregar</button>
+      </div>
+      <div class="card">
+        <h3>Sennheiser EW 100 G4</h3>
+        <p>$3.500 por día</p>
+        <button onclick="agregarAlCarrito('Sennheiser EW 100 G4', 3500)">Agregar</button>
+      </div>
+    </div>
+
+    <h2>Consolas e Interfaces</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Behringer X32</h3>
+        <p>$10.000 por día</p>
+        <button onclick="agregarAlCarrito('Behringer X32', 10000)">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="carrito">
+    <h2>Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total">Total: $0</p>
+  </section>
+
+  <script src="carrito.js"></script>
+</body>
+</html>
